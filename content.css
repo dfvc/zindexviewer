@@ -1,0 +1,106 @@
+:root {
+    --root-bg-color: #fff;
+    --highlight-label-bg-color: #000;
+    --highlight-label-bg-color-hover: transparent;
+    --highlight-label-color: #fff;
+    --highlight-label-color-hover: transparent;
+    --theme-a-color-primary: rgba(255, 255, 0, .75);
+    --theme-a-color-primary-hover: rgba(255, 255, 0, .25);
+    --theme-a-color-secondary: rgb(254, 160, 0);
+    --theme-b-color-primary: rgba(227, 0, 243, .75);
+    --theme-b-color-primary-hover: rgba(227, 0, 243, .25);
+    --theme-b-color-secondary: rgb(121, 0, 130);
+    --theme-c-color-primary: rgba(145, 226, 0, .75);
+    --theme-c-color-primary-hover: rgba(145, 226, 0, .25);
+    --theme-c-color-secondary: rgb(96, 147, 0);
+    --theme-d-color-primary: rgba(0, 255, 246, .75);
+    --theme-d-color-primary-hover: rgba(0, 255, 246, .25);
+    --theme-d-color-secondary: rgb(0, 180, 175);
+    --theme-e-color-primary: rgba(255, 0, 0, .75);
+    --theme-e-color-primary-hover: rgba(255, 0, 0, .25);
+    --theme-e-color-secondary: rgb(175, 0, 0);
+}
+
+html {
+    background-color: var(--root-bg-color);
+}
+
+.zindex-container .zindex-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .25s ease;
+}
+
+.zindex-container .zindex-tag-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2px;
+    font-family: Trebuchet, Tahoma, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 0;
+    border-radius: 4px;
+    min-height: 16px;
+    min-width: 16px;
+    color: var(--highlight-label-color);
+    background-color: var(--highlight-label-bg-color);
+    transition: all .25s ease;
+}
+
+.zindex-container .zindex-tag:hover .zindex-tag-label {
+    color: var(--highlight-label-color-hover);
+    background-color: var(--highlight-label-bg-color-hover);
+}
+
+.zindex-container--a .zindex-tag {
+    background-color: var(--theme-a-color-primary);
+    box-shadow: inset 0 0 0 1px var(--theme-a-color-secondary);
+}
+
+.zindex-container--a .zindex-tag:hover {
+    background-color: var(--theme-a-color-primary-hover);
+}
+
+.zindex-container--b .zindex-tag {
+    background-color: var(--theme-b-color-primary);
+    box-shadow: inset 0 0 0 1px var(--theme-b-color-secondary);
+}
+
+.zindex-container--b .zindex-tag:hover {
+    background-color: var(--theme-b-color-primary-hover);
+}
+
+.zindex-container--c .zindex-tag {
+    background-color: var(--theme-c-color-primary);
+    box-shadow: inset 0 0 0 1px var(--theme-c-color-secondary);
+}
+
+.zindex-container--c .zindex-tag:hover {
+    background-color: var(--theme-c-color-primary-hover);
+}
+
+.zindex-container--d .zindex-tag {
+    background-color: var(--theme-d-color-primary);
+    box-shadow: inset 0 0 0 1px var(--theme-d-color-secondary);
+}
+
+.zindex-container--d .zindex-tag:hover {
+    background-color: var(--theme-d-color-primary-hover);
+}
+
+.zindex-container--e .zindex-tag {
+    background-color: var(--theme-e-color-primary);
+    box-shadow: inset 0 0 0 1px var(--theme-e-color-secondary);
+}
+
+.zindex-container--e .zindex-tag:hover {
+    background-color: var(--theme-e-color-primary-hover);
+}

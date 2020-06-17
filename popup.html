@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="popup.css"
+        >
+    </head>
+    <body>
+        <h1>Z-Index Viewer Settings</h1>
+        <form class="settings-form">
+            <fieldset>
+                <legend>Skipped Elements</legend>
+                <div class="form-element">
+                    <input
+                        id="settings__skip-z-index-auto"
+                        type="checkbox"
+                    >
+                    <label for="settings__skip-z-index-auto">Auto z-indexed</label>
+                </div>
+
+                <div class="form-element">
+                    <input
+                        id="settings__skip-hidden"
+                        type="checkbox"
+                    >
+                    <label for="settings__skip-hidden">Hidden</label>
+                </div>
+
+                <div class="form-element">
+                    <input
+                        id="settings__skip-empty-sized"
+                        type="checkbox"
+                    >
+                    <label for="settings__skip-empty-sized">Empty sized (width or height)</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Miscellaneous</legend>
+                <div class="form-element">
+                    <input
+                        id="settings__misc-log-console"
+                        type="checkbox"
+                    >
+                    <label for="settings__misc-log-console">List in console</label>
+                </div>
+
+                <div class="form-element">
+                    <input
+                        id="settings__misc-log-sorted"
+                        type="checkbox"
+                    >
+                    <label for="settings__misc-log-sorted">List sorted</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Color Theme</legend>
+                <div class="form-element">
+                    <button
+                        id="settings__theme-button--a"
+                        class="settings__theme-button"
+                        type="button"
+                        name="a"
+                    ></button>
+
+                    <button
+                        id="settings__theme-button--b"
+                        class="settings__theme-button"
+                        type="button"
+                        name="b"
+                    ></button>
+
+                    <button
+                        id="settings__theme-button--c"
+                        class="settings__theme-button"
+                        type="button"
+                        name="c"
+                    ></button>
+
+                    <button
+                        id="settings__theme-button--d"
+                        class="settings__theme-button"
+                        type="button"
+                        name="d"
+                    ></button>
+
+                    <button
+                        id="settings__theme-button--e"
+                        class="settings__theme-button"
+                        type="button"
+                        name="e"
+                    ></button>
+                </div>
+            </fieldset>
+
+            <button
+                id="settings__toggle-button"
+                type="button"
+            >
+                Enable Z-Indexes
+            </button>
+        </form>
+
+        <script src="popup.js"></script>
+    </body>
+</html>
